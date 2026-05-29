@@ -199,7 +199,7 @@ jobs:
             arch_setup: |
               sudo dpkg --add-architecture i386
               sudo apt-get update
-            cmake_args: "-DCMAKE_C_FLAGS=-m32 -DCMAKE_CXX_FLAGS=-m32"
+            cmake_args: "-DCMAKE_C_FLAGS=-m32 -DCMAKE_CXX_FLAGS=-m32 -DCMAKE_ASM_NASM_OBJECT_FORMAT=elf32"
 
           # ----------------------------------------------------------
           # ARM64 cross-build
